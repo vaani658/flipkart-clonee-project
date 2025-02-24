@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .navbar {
+            background-color: #2874f0;
+        }
+        .navbar .navbar-brand {
+            color: #fff;
+        }
+        .search-bar {
+            width: 300px;
+        }
+        .banner {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+        .category-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .category-card img {
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">Flipkart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="offers.html">Offers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Search Bar -->
+    <form class="form-inline ml-3">
+        <input class="form-control search-bar" type="search" placeholder="Search for products" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</nav>
+
+<!-- Banner Section -->
+<div class="banner">
+    <h1>Welcome to Flipkart</h1>
+    <p>Explore a wide range of products and deals</p>
+</div>
+
+<!-- Categories Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Shop by Categories</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="category-card">
+                <a href="categories.html#electronics">
+                    <img src="electronics.avif" class="card-img-top" alt="Electronics">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronics</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="category-card">
+                <a href="categories.html#clothing">
+                    <img src="clothing.jpeg" class="card-img-top" alt="Clothing">
+                    <div class="card-body">
+                        <h5 class="card-title">Clothing</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="category-card">
+                <a href="categories.html#home-appliances">
+                    <img src="appliances.jpeg" class="card-img-top" alt="Home Appliances">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Appliances</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Products Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="sando.jpeg" class="card-img-top" alt="Product 1">
+                <h5 class="card-title">Men's Sando</h5>
+                <p class="card-text">$399</p>
+                <a href="product_details.html" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="shoes.jpeg" class="card-img-top" alt="Product 2">
+                <h5 class="card-title">Men's Footwear</h5>
+                <p class="card-text">$1599</p>
+                <a href="product_details.html" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="sunscreen.jpeg" class="card-img-top" alt="Product 3">
+                <h5 class="card-title">sunscreen</h5>
+                <p class="card-text">$599</p>
+                <a href="product_details.html" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="laptop bag.jpeg" class="card-img-top" alt="Product 4">
+                <h5 class="card-title">Laptop Bag</h5>
+                <p class="card-text">$1999</p>
+                <a href="product_details.html" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap 4 JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
